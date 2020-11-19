@@ -682,7 +682,9 @@ padding-top: 94px;
 }
 
 .project-thumb:hover .project-overlay::before,
-.project-thumb:hover .project-text{
+.project-thumb:hover .project-text,
+.project-img .item:focus-within .project-overlay::before,
+.project-img .item:focus-within .project-text{
     transform: translateY(0);
 }
 
@@ -712,7 +714,7 @@ padding-top: 94px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-.work-img{
+  .work-img{
     display: flex;
     justify-content: space-between;   
 }
